@@ -1,6 +1,8 @@
 # ember-cli-wordpress-jsonapi
 
-This README outlines the details of collaborating on this Ember addon.
+This ember-cli addon is a work-in-progress.
+
+It uses Wordpress as a content back-end via the [Wordpress JSON-API plugin](https://wordpress.org/plugins/json-api/)
 
 ## Installation
 
@@ -8,10 +10,15 @@ This README outlines the details of collaborating on this Ember addon.
 * `npm install`
 * `bower install`
 
-## Running
+## Running / Development
 
+* SETUP THE PROXY FOR YOUR WORDPRESS SITE (`server/proxies/wordpress.js`)
 * `ember server`
 * Visit your app at http://localhost:4200.
+
+## Running / Production
+
+* I recommend setting up a server-side proxy for this
 
 ## Running Tests
 
