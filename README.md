@@ -4,6 +4,18 @@ This ember-cli addon is a work-in-progress.
 
 It uses Wordpress as a content back-end via the [Wordpress JSON-API plugin](https://wordpress.org/plugins/json-api/)
 
+Configure a proxy to your wordpress installation by adding the relevant configuration to .ember-cli
+
+    {
+      "disableAnalytics": false,
+      "wordpressJsonApi" : {
+        "proxyPath" : "/wordpress",
+        "proxyHost" : "example.com",
+        "useSSL"    : true
+      }
+
+    }
+
 ## Installation
 
 * `git clone` this repository
@@ -12,7 +24,7 @@ It uses Wordpress as a content back-end via the [Wordpress JSON-API plugin](http
 
 ## Running / Development
 
-* SETUP THE PROXY FOR YOUR WORDPRESS SITE (`server/proxies/wordpress.js`)
+* SETUP THE PROXY FOR YOUR WORDPRESS SITE
 * `ember server`
 * Visit your app at http://localhost:4200.
 
