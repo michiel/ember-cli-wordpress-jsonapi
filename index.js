@@ -32,7 +32,7 @@ module.exports = {
 
     console.log('wordpress-jsonapi : setting up a proxy from ' + conf.proxyPath + ' to ' + conf.proxyUrl);
 
-    app.use(proxyPath, function(req, res, next) {
+    app.use(conf.proxyPath, function(req, res, next) {
 
       // include root path in proxied request
       // req.url = path.join(proxyPath, req.url);
